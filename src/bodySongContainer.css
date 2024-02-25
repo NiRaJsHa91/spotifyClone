@@ -1,0 +1,32 @@
+.body_song_container {
+  display: flex;
+  flex-direction: column;
+  min-height: 135px;
+  min-width: 135px;
+  /* max-width: fit-content; */
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgb(14, 14, 35);
+  padding: 5px 5px 5px;
+  box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.605);
+  cursor: pointer;
+}
+
+.body_song_container > img {
+  height: 85%;
+  width: 100%;
+  object-fit: cover;
+}
+.body_song_container > p {
+  /* font-size:; */
+  height: 15%;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  /* border: 5px solid rgba(0, 0, 0, 0.156); */
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}

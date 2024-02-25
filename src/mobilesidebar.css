@@ -1,0 +1,49 @@
+.mobile_sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  box-shadow: 2px 0px 50px 500px rgba(27, 17, 17, 0.71);
+  background-color: #040404;
+  min-height: 100vh;
+  height: 100svh;
+  padding: 20px;
+  color: white;
+  overflow-y: auto;
+}
+
+.close_sidebar_icon {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.mobile_sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.mobile_sidebar > img {
+  height: 3rem;
+  margin-bottom: 20px;
+}
+
+@media (max-width:380px){
+    .mobile_sidebar > img{
+        height: 2.5rem;
+    }
+}
+@media (max-width:320px){
+    .mobile_sidebar > img{
+        height: 2rem;
+    }
+}
+
+.mobile_sidebar > strong {
+  font-weight: 500;
+}
+
+.mobile_sidebar > hr {
+  margin-top: 10px;
+  border: 1px solid #282828;
+}

@@ -1,0 +1,117 @@
+@media (max-width: 640px) {
+  
+  /* was not working with .heading selector only */
+.playlist_all_songs .heading {
+  grid-template-columns: 1fr 0.5fr 0.5fr ;
+}
+
+  .heading > p:last-child {
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+  .heading > p:nth-child(3) {
+    display: none;
+  }
+
+  .playlist_all_songs .heading {
+  grid-template-columns: 1fr 0.5fr  ;
+}
+  
+}
+@media screen and (max-width: 420px) {
+  .heading > p:nth-child(2) {
+    display: none;
+  }
+}
+
+.single_player {
+  background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));
+  flex: 1;
+  min-height: 100svh;
+  padding: 20px;
+  color: white;
+  /* very imp */
+  overflow-y: auto;
+}
+
+.single_player_menu {
+  display: none;
+}
+
+@media (max-width: 920px) {
+  .single_player_menu {
+    display: block;
+  }
+}
+@media screen and (min-width: 920px) {
+  .avatar {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+.playlist_info {
+  display: grid;
+  align-items: flex-end;
+  /* place-items: end; */
+  grid-template-columns: 0.3fr 2rem 1fr;
+  height: auto;
+  min-height: 125px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow-y: scroll;
+  /* background-color: red; */
+}
+
+.playlist_info::-webkit-scrollbar {
+  display: none;
+}
+
+.poster_image {
+  grid-column: 1/2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+.poster_image > img {
+  border-radius: 5px;
+  min-width: 130px;
+  max-width: 100%;
+  height: auto;
+  min-height: 130px;
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 1);
+  object-fit: cover;
+}
+
+.poster_info {
+  /* background-color: green; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  grid-column: 3/4;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+
+  white-space: nowrap;
+}
+
+.poster_info > p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.heading {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
+  color: #909292;
+  gap: 1rem;
+}
+
+
+

@@ -1,0 +1,100 @@
+html,
+body {
+  background-color: black;
+}
+
+.login {
+  display: flex;
+  /* place-items: center; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-height: 100dvh;
+  padding: 20px;
+  gap: 2rem;
+  min-width: 320px;
+}
+
+.login_upper_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  flex: 0.9;
+  gap: 1rem;
+  /* background-color: red; */
+}
+
+.login_upper_section > img {
+  object-fit: contain;
+  width: 100%;
+  height: 150px;
+}
+
+.login_upper_section .note{
+  height: auto;
+  color: white;
+  width: 350px;
+  /* margin: auto; */
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.397);
+  border-radius: 10px;
+  padding: 20px;
+
+}
+
+
+
+.note > h3 {
+  margin-bottom: 10px;
+}
+
+.note h4 {
+  text-align:left;
+}
+.note >  h4:nth-child(4) {
+  margin-bottom: 5px;
+}
+
+ 
+
+.note  p {
+  word-break: normal;
+    white-space: normal;
+   /* padding-left: 10px ; */
+   /* border: 1px solid red; */
+   text-align:left;
+   line-height: 1.5;
+   font-weight: 500;
+}
+
+.note_credentials {
+  margin-top: 10px;
+}
+.note > p:nth-child(2) {
+  margin-bottom: 5px;
+}
+
+.login_bottom_section {
+  flex: 0.1;
+  justify-content: flex-end;
+  /* background-color: green; */
+}
+
+
+
+.login_bottom_section > a {
+  background-color: #1fdf64;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 1em;
+  border-radius: 50px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

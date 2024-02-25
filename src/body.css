@@ -1,0 +1,62 @@
+.body {
+  background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));
+  flex: 1;
+  min-height: 100svh;
+  padding: 20px;
+
+  overflow-y: auto;
+  position: relative;
+}
+
+.body::-webkit-scrollbar {
+  display: none;
+}
+
+.body_info {
+  color: white;
+  margin-bottom: 30px;
+  position: relative;
+  height: 200px;
+}
+
+.body_info .no_playlist_title {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  margin-top: 50px;
+}
+
+
+.no_playlist_div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: xx-large;
+}
+
+.body_songs {
+  /* border: 2px solid red; */
+  margin-top: 15px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 40px;
+  position: relative;
+}
+
+@media (max-width: 920px) {
+  .body_songs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .body {
+    flex: 1;
+  }
+}
+
+@media (max-width: 510px) {
+  .body_songs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

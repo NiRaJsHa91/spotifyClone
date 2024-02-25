@@ -1,0 +1,48 @@
+.bodysongsList {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  padding-left: 5px;
+  /* border: 2px solid red; */
+  color: white;
+  margin-bottom: 5px;
+  height: 55px;
+  align-items: center;
+  border-radius: 5px;
+  transition: background-color 0.1s linear;
+}
+
+.song_title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 5px;
+  flex: 0.4;
+}
+.bodysongsList:hover {
+  background-color: rgba(255, 255, 255, 0.186);
+}
+
+.song_title > img {
+  height: 38px;
+  width: 38px;
+  /* position: absolute; */
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.song_titleInfo {
+  margin-left: 8px;
+}
+
+.song_album {
+  flex: 0.2;
+}
+
+.song_addedDate {
+  flex: 0.2;
+}
+
+.song_duration {
+  flex: 0.2;
+}

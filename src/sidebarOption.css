@@ -1,0 +1,23 @@
+.sidebarOption{
+    line-height: 2;
+    color: gray;
+    cursor: pointer;
+    transition: color 200ms linear;
+    display: flex;
+    align-items: center;
+}
+
+.sidebarOption h4,p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sidebarOption:hover{
+    color: white;
+}
+
+.sidebarIcon{
+    margin-right: 10px;
+}
+

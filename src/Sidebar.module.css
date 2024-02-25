@@ -1,0 +1,41 @@
+.sidebar{
+    background-color: #040404;
+    /* flex: 0.2; */
+    min-height: 100vh;
+    /* min-width: 230px; */
+    height: 100vh;
+    padding: 20px;
+    color: white;
+    /* very imp */
+    overflow-y: auto;
+}
+
+
+
+@media (max-width:920px){
+    .sidebar{
+        display: none;
+    }
+}
+
+.sidebar::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+.sidebar > img{
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+
+
+.sidebar > strong{
+    font-weight: 500;
+}
+
+.sidebar > hr{
+    margin-top: 10px;
+    border: 1px solid #282828;
+}
