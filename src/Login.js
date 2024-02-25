@@ -20,8 +20,8 @@ function Login() {
             You must be logged in with actual spotify in your system with
             following credentials and add or remove any song, playlists. And then you can click login button below to see them in this app
           </p>
-          <h4 className="note_credentials"> Email : Niraj@justzeus.com</h4>
-          <h4>Password : Niraj@justzeus.com</h4>
+          <h4 className="note_credentials"> Email : nirajdummy@gmail.com</h4>
+          <h4>Password : nirajdummy91@gmail.com</h4>
         </div>
       </div>
       <div className="login_bottom_section">
