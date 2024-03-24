@@ -5,7 +5,7 @@ import { spotify } from "./App";
 
 const BodySongContainer = ({id,coverImage,title}) => {
   const [{playlist}, dispatch] = useDataLayerValue();
-  console.log(coverImage)
+  
   const setPlaylist = (id) => {
     spotify.getPlaylist(`${id}`).then((playlist) => {
       dispatch({
